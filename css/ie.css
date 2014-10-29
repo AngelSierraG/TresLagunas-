@@ -1,0 +1,28 @@
+#header.subpage_header #search input {
+    width: auto;
+    padding-top: 12px;
+}
+
+#header #search input {
+    padding-top: 12px;
+}
+
+#header #search::-ms-clear {
+    display: none;
+}
+
+.class {
+    behavior:url(js/PIE.htc);
+}
+
+#contact-form .contact-form-loader {
+    background-image: none;
+}
+
+#contact-form input[type='text'] {
+    padding-top: 10px;
+}
+
+#bookingForm .tmRadio .radio-block .radio {
+    margin-right: 0;
+}
