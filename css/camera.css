@@ -191,7 +191,7 @@
     width: 186px;
     height: 50px;
     padding: 16px 0;
-    background: #73cfff;
+    background: #57BE45;
     color: #FFF;
     display: inline-block;
     border-radius: 23px;
@@ -371,11 +371,11 @@
     opacity: 0.5;
 }
 .camera_wrap .camera_pag .camera_pag_ul li:hover {
-	background: #73cfff;
+	background: #57BE45;
     opacity: 0.5;
 }
 .camera_wrap .camera_pag .camera_pag_ul li.cameracurrent  {
-	background: #73cfff;
+	background: #57BE45;
     opacity: 0.5;
 }
 

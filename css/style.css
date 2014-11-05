@@ -15,7 +15,7 @@
 body {
   font: 400 14px/18px "Roboto", sans-serif;
   color: #b3b3b3;
-  background: #73cfff;
+  background: #57BE45;
 }
 a[href^="tel:"] {
   color: inherit;
@@ -85,7 +85,7 @@ h3 {
   color: #ffffff;
 }
 .h3__inset1 a:hover {
-  color: #73cfff;
+  color: #57BE45;
 }
 /* ======= Buttons ======= */
 .btn-default {
@@ -99,7 +99,7 @@ h3 {
   height: 40px;
   padding: 10px 10px;
   text-align: center;
-  background: #73cfff;
+  background: #57BE45;
   color: #ffffff;
   display: inline-block;
   border-radius: 23px;
@@ -185,7 +185,7 @@ h3 {
   height: 41px;
   width: 220px;
   background: #e1e1e1;
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search::-ms-clear {
   display: none;
@@ -206,24 +206,24 @@ h3 {
   width: 180px;
   background: #e1e1e1;
   padding: 0 0 0 10px;
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search input::-ms-clear {
   display: none;
 }
 #header #search input::-webkit-input-placeholder {
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search input:-moz-placeholder {
   /* Firefox 18- */
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search input:-ms-input-placeholder {
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search a {
   position: absolute;
@@ -235,7 +235,7 @@ h3 {
   right: 10px;
 }
 #header #search a:hover {
-  color: #73cfff;
+  color: #57BE45;
 }
 #header #search a > .search_icon {
   display: block;
@@ -380,7 +380,7 @@ h3 {
   margin-bottom: 12px;
 }
 .post1 h3 a:hover {
-  color: #73cfff;
+  color: #57BE45;
 }
 .post1 .sprite {
   left: 50%;
@@ -429,7 +429,7 @@ h3 {
   position: relative;
 }
 .post2:hover .content {
-  border-color: #73cfff;
+  border-color: #57BE45;
 }
 .post2 img {
   width: 100%;
@@ -438,7 +438,7 @@ h3 {
   margin-bottom: 8px;
 }
 .post2 time {
-  color: #73cfff;
+  color: #57BE45;
   display: block;
   margin-top: -4px;
   margin-bottom: 7px;
@@ -469,7 +469,7 @@ h3 {
 }
 .simple-link {
   display: inline-block;
-  color: #73cfff;
+  color: #57BE45;
 }
 .simple-link:hover {
   color: #444444;
@@ -572,7 +572,7 @@ h3 {
 #owl .item a {
   display: block;
   position: relative;
-  background: #73cfff;
+  background: #57BE45;
 }
 @media (max-width: 979px) {
   #owl .item a img {
@@ -664,7 +664,7 @@ h3 {
   text-align: center;
 }
 .btn-play:hover {
-  border-color: #73cfff;
+  border-color: #57BE45;
 }
 .btn-play:hover i {
   color: #ffffff;
@@ -672,7 +672,7 @@ h3 {
 .btn-play i {
   line-height: 84px;
   font-size: 27px;
-  color: #73cfff;
+  color: #57BE45;
   margin-left: 4px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -701,7 +701,7 @@ h3 {
   transition: all 0.3s ease;
 }
 .post8 .post8_info:hover {
-  border-color: #73cfff;
+  border-color: #57BE45;
 }
 .post8 .post8_info:hover:before {
   background-position: 0 0;
@@ -737,7 +737,7 @@ h3 {
 }
 /* ======= Accordion ======= */
 #accordion > h3 {
-  color: #73cfff;
+  color: #57BE45;
   font-size: 14px;
   line-height: 18px;
 }
@@ -768,12 +768,12 @@ h3 {
   content: '+';
 }
 #accordion .ui-state-hover {
-  border: 2px solid #73cfff;
+  border: 2px solid #57BE45;
   outline: none;
 }
 #accordion .ui-accordion-header-active {
   position: relative;
-  border: 2px solid #73cfff;
+  border: 2px solid #57BE45;
   outline: none;
 }
 #accordion .ui-accordion-header-active:after {
@@ -847,7 +847,7 @@ h3 {
   margin-bottom: 76px;
 }
 .post4 .marker_p:hover {
-  color: #73cfff;
+  color: #57BE45;
 }
 .post4 .marker {
   position: absolute;
@@ -899,11 +899,11 @@ h3 {
   height: 0;
   border-style: solid;
   border-width: 5.5px 0 5.5px 7px;
-  border-color: transparent transparent transparent #73cfff;
+  border-color: transparent transparent transparent #57BE45;
 }
 .list1 li a {
   display: inline-block;
-  color: #73cfff;
+  color: #57BE45;
 }
 .list1 li a:hover {
   color: #444444;
@@ -959,7 +959,7 @@ h3 {
   margin-bottom: 8px;
 }
 #bookingForm .booking-form_header .number {
-  color: #73cfff;
+  color: #57BE45;
   font-size: 30px;
   line-height: 32px;
   font-weight: 900;
@@ -1138,7 +1138,7 @@ h3 {
   min-width: 57px;
 }
 .privacy-demolink:hover {
-  color: #73cfff;
+  color: #57BE45;
 }
 /* ======= Contact Form ======= */
 #contact-form {
@@ -1222,7 +1222,7 @@ h3 {
 }
 #footer .footer_banner .contact-info_simple-link:hover {
   cursor: pointer;
-  color: #73cfff;
+  color: #57BE45;
 }
 @media (max-width: 767px) {
   #footer .footer_banner {
@@ -1231,7 +1231,7 @@ h3 {
 }
 #footer .privacy {
   text-align: center;
-  background: #73cfff;
+  background: #57BE45;
   padding: 33px 0 30px;
   color: #ffffff;
 }

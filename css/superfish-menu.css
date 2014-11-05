@@ -35,25 +35,25 @@ nav {
   color: #444444;
 }
 .sf-menu > li > a:hover {
-  color: #73cfff;
+  color: #57BE45;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 .sf-menu > li > a:active {
   background: transparent;
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu .sfHover > a:after {
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu > li.current > a {
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu > li.current > .sf-with-ul:after {
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu > li.sfHover > a {
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu a {
   -webkit-transition: 0.3s all ease;
@@ -104,13 +104,13 @@ nav {
   text-transform: none;
 }
 .sf-menu ul li a:hover {
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu ul > .sfHover > a:after {
-  color: #73cfff;
+  color: #57BE45;
 }
 .sf-menu ul li.sfHover > a {
-  color: #73cfff;
+  color: #57BE45;
 }
 /* Second level sub-menu styles
 ========================================================*/
@@ -134,7 +134,7 @@ nav {
   display: block;
 }
 .sf-menu ul ul li:hover {
-  background: #73cfff;
+  background: #57BE45;
 }
 .sf-menu ul ul li:hover a {
   color: #ffffff;
@@ -166,13 +166,13 @@ nav {
     display: block;
     text-transform: capitalize;
     float: none;
-    color: #73cfff;
+    color: #57BE45;
     width: 100%;
     margin-top: 20px;
     background: #ffffff;
     font: 22px/28px "Roboto", sans-serif;
     text-align: left;
-    border: 1px solid #73cfff;
+    border: 1px solid #57BE45;
     padding: 2px 0;
     position: relative;
   }
