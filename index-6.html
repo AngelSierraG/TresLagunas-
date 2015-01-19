@@ -45,11 +45,11 @@
         <div class="container">
             <div class="row">
                 <div class="grid_12">
-                    <h1><a href="index.html"><img src="images/logo.png" alt=""/></a></h1>
+                    
                      <nav>
                         <ul class="sf-menu">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="index-1.html">Nosotros</a>
+                                                 <li ><a href="index.php">Inicio</a></li>
+                            <li><a href="nosotros.php">Nosotros</a>
                                 <ul>
                                     <li><a href="#">Información General</a></li>
                                     <li><a href="#">Historia</a>
@@ -59,13 +59,41 @@
                                             <li><a href="#">Selva Lacandona</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Santuario</a></li>
+                                    <li><a href="http://treslagunas.com.mx/recorrido/index.html">Santuario</a></li>
                                 </ul>
                             </li>
-                            <li><a href="index-2.html">Actividades</a></li>
-                            <li><a href="index-3.html">Noticias</a></li>
-                            <li><a href="index-4.html">Reservación</a></li>
-                            <li><a href="index-5.html">Contacto</a></li>
+                            <li ><a href="actividades.php">Actividades</a></li>
+                            <li><a href="noticias.php">Noticias</a></li>
+                             <li > <a href="#">Reservación</a>
+                                <ul>
+
+                                            <?php 
+                                            if(!isset($_COOKIE['user'])){ 
+
+                                            ?>
+                                            <li><a href="#">Cotización</a></li>
+                                            <li><a href="index3.php">Login </a></li>
+                                            <li><a href="index3.php">Registro</a></li>
+
+                                            <?php }
+
+                                            else {
+
+
+                                             ?>
+                                              <li><a href="reservacion.php">Reservar</a></li>
+                                            <li><a href="user.php">Mis Reservaciones</a></li>
+                                            
+
+                                            <?php 
+                                            }
+                                            ?>
+
+
+                                            </ul>
+                                            <li ><a href="contacto.php">Contacto</a></li>
+
+                            </li>
                         </ul>
                         <div class="clearfix"></div>
                     </nav>
