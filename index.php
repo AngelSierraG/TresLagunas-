@@ -233,7 +233,7 @@
               <div class="row">
                   <div class="grid_12">
                       <div class="h2 wow bounceInUp">
-                          <h2>Nuestras Noticias</h2>
+                          <h2>Noticias</h2>
                           <span class="h2_span">Conoce todo acerca de nuestro Santuario </span>
                       </div>
                   </div>
@@ -528,11 +528,11 @@
               <div class="row">
                   <div class="grid_12">
                       <div class="h2">
-                          <h2 class="h2__inset1">Tres Lagunas Video</h2>
+                          <h2 class="h2__inset1">Tres Lagunas Vídeo</h2>
                           <span class="h2_span"> Un lugar que heredaron los lacandones, descendientes directos de los mayas. Se trata del centro ecoturístico Tres Lagunas, ubicado en plena selva lacandona en el estado de Chiapas.  </span>
                       </div>
                       <a href="//www.youtube.com/embed/6nspuNybsW0" class="various iframe btn-play"><i class="fa fa-play"></i></a>
-                      <h3 class="h3__inset1">Ver video</h3>
+                      <h3 class="h3__inset1">Ver vídeo</h3>
                   </div>
               </div>
           </div>
@@ -580,7 +580,7 @@
                           <h3>REPELENTE para mosquitos</h3>
                           <div>Los mosquitos de la Selva Lacandona son distintos a los que habitualmente conocenos en la ciudad, son más grandes y hay en mucha cantidad, se recomienda utilizar el repelente cada que el producto termine su efecto y después de bañarse. </div>
                           <h3>COMIDA</h3>
-                          <div>Dependiendo de los días y las actividades que vas a realizar, es recomendable llevar solo lo indispensable de manera personal y práctico para preparar; alimentos no perecederos como atún y frijoles enlatados, pan, frutas sólidas. *Carnes, bombones, si desean realizar fogatas de noche.</div>
+                          <div>Dependiendo de los días y las actividades que vas a realizar, es recomendable llevar solo lo indispensable de manera personal y práctico para preparar; alimentos no perecederos como atún y frijoles enlatados, pan, frutas sólidas. *Carnes, bombones, si desean realizar fogatas de noche. De igual manera el centro cuenta con un Restaurante.</div>
                           <h3>KIT PERSONAL DE LIMPIEZA</h3>
                           <div>Puede ser desde tu shampoo personal, jabón de baño, pasta de dientes, cepillo dental, etc, todo depende del cuidado que habitualmente estás acostumbrado a realizar, no olvides que aunque sea clima templado, el sol en las temporadas altas de calor es indispensable llevar consigo un protector solar.</div>
                       </div>

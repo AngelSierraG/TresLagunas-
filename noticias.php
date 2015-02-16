@@ -115,8 +115,8 @@
         <div class="row">
             <div class="grid_12">
                 <div class="h2 wow bounceInUp">
-                    <h2>NUESTROS ARTICULOS</h2>
-                    <span class="h2_span">CONOSE MAS DE TRES LAGUNAS</span>
+                    <h2>NUESTROS ARTÍCULOS</h2>
+                    <span class="h2_span">CONOSE MÁS DE TRES LAGUNAS</span>
                 </div>
             </div>
         </div>

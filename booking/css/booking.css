@@ -4,10 +4,22 @@
 /*end custom mixins */
 /* Control Holder */
 #bookingForm {
-  position: relative;
-  width: 100%;
+  position: absolute;
+  width: auto%;
   margin: 30px 0;
   font: 12px/18px Roboto, sans-serif;
+  height: auto;
+}
+#bookingFormD {
+  position: absolute;
+  width: 40%;
+  left: 55%;
+  margin: 5px 0;
+  font: 12px/18px Roboto, sans-serif;
+  height: 50%;
+  top: 10%;
+  border: 1px;
+  background-color: #4ac600;
 }
 #bookingForm input,
 #bookingForm textarea {

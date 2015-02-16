@@ -127,14 +127,14 @@
                     <form id="bookingForm">
                         <div class="when">
                                 <div class="booking-form_header">
-                                    <span class="number">01.</span><span class="question">¿Cuando?</span>
+                                    <span class="number">01.</span><span class="question">¿Cuándo?</span>
                                 </div>
                                 <label class="tmDatepicker">
-                                 <span class="p">Check-in</span>
+                                 <span class="p">Fecha Inicio/Check-in</span>
                                     <input type="text" name="ArrivalDate"  placeHolder='' data-constraints="@NotEmpty @Required @Date">
                                 </label>
                                 <label class="tmDatepicker">
-                                    <span class="p">Check-out</span>
+                                    <span class="p">Fecha Final/Check-out</span>
                                     <input type="text" name="ArrivalDate"  placeHolder='' data-constraints="@NotEmpty @Required @Date">
                                 </label>
                         </div>
@@ -142,7 +142,7 @@
                        
                         <div class="where">
                             <div class="booking-form_header">
-                                <span class="number">02.</span><span class="question">¿Cuantos?</span>
+                                <span class="number">02.</span><span class="question">¿Cuántos?</span>
                             </div>
                             <div class="input-block">
                                 <div class="tmInput">
@@ -177,9 +177,6 @@
                                 </div>
                             </div>
                        
-
-                       
-                       
                         <div class="who">
                             <div class="booking-form_header">
                                 <span class="number">04.</span><span class="question">¿Qué Actividades?</span>
@@ -195,56 +192,22 @@
                                         <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
                                         <span>Caminata</span>
                                     </div>
-                                 
-                                    
-                        </div>
+                            </div>
                         <div class="clearfix"></div>
-                        <a class="btn-default" href="#" data-type="submit">ENVIAR</a>
+                        <a class="btn-default" href="#" data-type="submit">ENVIAR</a><br><br><br><br>
+                    
+
+
                     </form>
                 </div>
-            </div>
+             </div>
         </div>
-    </div>
+     </div>
 
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="grid_12">
-                    <div class="h2">
-                        <h2>useful info</h2>
-                        <span class="h2_span">Weitas est etiam procesim veniam</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row wow bounceInLeft">
-                <div class="grid_4">
-                    <div class="post3 post3__inset1">
-                        <img src="images/page5_img1.png" alt=""/>
-                        <h3>Ut tellus dolor, dapibus eget elementum vel cursus</h3>
-                        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus.</p>
-                        <a class="btn-default" href="#">more</a>
-                    </div>
-                </div>
-                <div class="grid_4">
-                    <div class="post3 post3__inset1">
-                        <img src="images/page5_img2.png" alt=""/>
-                        <h3>In pede mi, aliquet sit amet, euismod in auctor</h3>
-                        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus.</p>
-                        <a class="btn-default" href="#">more</a>
-                    </div>
-                </div>
-                <div class="grid_4">
-                    <div class="post3 post3__inset1">
-                        <img src="images/page5_img3.png" alt=""/>
-                        <h3>Aliquam congue fermentum nisl lobortis dignissim</h3>
-                        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus.</p>
-                        <a class="btn-default" href="#">more</a>
-                    </div>
-                </div>
-            </div>
+     <div id="bookingFormD"></div>
 
-        </div>
-    </div>
+    
+
 </section>
 
 
