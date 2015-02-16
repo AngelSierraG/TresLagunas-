@@ -126,7 +126,7 @@
                 
                 xmlhttpSM.open("GET","CrearCuentaUsuario.php?nombre="+nombre+"&email="+email+"&password="+password1+"&sexo="+sexo+"&tel="+telefono+"&lugar="+lugarV+"&dia="+diaV+"&mes="+mesV+"&anio="+anioV+"&idioma="+idiomaV+"&tipoUsuario="+tipoUsuarioV,false);
                 xmlhttpSM.send(); 
-				location.href = "index4.php";
+				location.href = "user.php";
 			}
 			
 		}
@@ -169,7 +169,8 @@
                                     <input type="submit" value="Iniciar sesion"  /> 
 								</p>
                                 <p class="change_link">
-									¿Aún no estás registrado?
+									<a href="index.php" class="to_register">Ir a Inicio</a>
+                                    ¿Aún no estás registrado?
 									<a href="#toregister" class="to_register">Crear una cuenta</a>
 								</p>
                             </form>
@@ -573,7 +574,8 @@
 									<input type="button" value="Registrarse"  onClick="crearUsuario()"/> 
 								</p>
                                 <p class="change_link">  
-									¿Ya eres un usuario?
+									<a href="index.php" class="to_register"> Ir a Inicio </a>
+                                    ¿Ya eres un usuario?
 									<a href="#tologin" class="to_register"> Iniciar sesión </a>
 								</p>
                             

@@ -73,7 +73,7 @@
                                             ?>
                                             <li><a href="#">Cotización</a></li>
                                             <li><a href="index3.php">Login </a></li>
-                                            <li><a href="index3.php">Registro</a></li>
+                                            <li><a href="index3.php#toregister">Registro</a></li>
 
                                             <?php }
 

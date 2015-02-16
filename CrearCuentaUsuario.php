@@ -18,9 +18,11 @@ if (!($link=mysql_connect("localhost","root","")))
    
  //Variable de Sesión
 $nombre=$_GET['nombre'];
-$_SESSION['sessionUser']=$nombre; 
+ 
 $email=$_GET['email'];
 
+//$_SESSION['sessionUser']=$userBD;
+setcookie("user", "".$email."", time() + 60 * 60 * 24);  
 $password=$_GET['password'];
 
 //m=0, f=1.

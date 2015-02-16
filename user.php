@@ -1,7 +1,94 @@
-﻿<!DOCTYPE html>
+﻿
+<?php
+//session_start();
+
+if(!isset($_COOKIE['user'])){
+	header('Location: index3.php');
+	}
+
+if (!($link=mysql_connect("localhost","root",""))) 
+   { 
+      echo "Error conectando a la base de datos."; 
+      exit(); 
+   } 
+   if (!mysql_select_db("bd_treslagunas",$link)) 
+   { 
+      echo "Error seleccionando la base de datos."; 
+      exit(); 
+   } 
+   
+	//echo "hola ". $_SESSION['sessionUser'];
+	$user = mysql_fetch_array(mysql_query("SELECT * FROM `usuario` where `email` LIKE '". $_COOKIE["user"]."'"));
+	//$_SESSION['sessionUser'] = $user['email'];
+	
+	
+	$result  = mysql_query("SELECT * FROM  `reservacion` WHERE  `Usuario_idNombre` =". $user['idNombre'] ." ORDER BY  `reservacion`.`idReservacion` DESC ");
+	
+ ?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nosotros</title>
+
+<script>
+
+function cerrarSesion() {
+	
+
+window.location="logout.php";	
+	
+	} 
+
+function loadbaucher(idReservacion){
+	
+	var xmlhttpLB;
+                if (window.XMLHttpRequest){
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttpLB=new XMLHttpRequest();
+                }else{
+                    // code for IE6, IE5
+                    xmlhttpLB=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttpLB.onreadystatechange=function(){
+                    if (xmlhttpLB.readyState==4 && xmlhttpLB.status==200){
+                        document.getElementById("detalles").innerHTML=xmlhttpLB.responseText;
+                    }
+                }
+                //send a request to a server
+                //var valor;
+                
+                xmlhttpLB.open("GET","baucher.php?idReservacion=" +idReservacion ,false);
+                xmlhttpLB.send();
+	
+	
+	}
+
+function showDetalles( idNombre, idReservacion){
+	//alert("idR" + idReservacion);
+	var xmlhttpL;
+                if (window.XMLHttpRequest){
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttpL=new XMLHttpRequest();
+                }else{
+                    // code for IE6, IE5
+                    xmlhttpL=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttpL.onreadystatechange=function(){
+                    if (xmlhttpL.readyState==4 && xmlhttpL.status==200){
+                        document.getElementById("detalles").innerHTML=xmlhttpL.responseText;
+                    }
+                }
+                //send a request to a server
+                //var valor;
+                
+                xmlhttpL.open("GET","detalles.php?idReservacion="+ idReservacion + "&idNombre="+ idNombre,false);
+                xmlhttpL.send();
+	
+	}
+</script>
+
+
+    <title>Bienvenido: <? echo $user['nombre'];?></title>
     <meta charset="utf-8">
     <meta name = "format-detection" content = "telephone=no" />
     <link rel="icon" href="images/favicon_.ico" type="image/x-icon">
@@ -83,6 +170,7 @@
                                              ?>
                                               <li><a href="reservacion.php">Reservar</a></li>
                                             <li><a href="user.php">Mis Reservaciones</a></li>
+                                             <li><a onClick="cerrarSesion()">LogOut</a></li>
                                             
 
                                             <?php 
@@ -124,16 +212,38 @@
             <div class="row">
                 <div class="grid_12">
                     <div class="post3">
-                        <img src="images/page2_img1.png" alt=""/>
-                        <p class="post_header">Lo lacandones son descendientes directos de los mayas, de quienes heredaron esta selva la cual hoy cuidan y muestran gustosamente a quienes guesten conocerla.</p>
-                        <p>Pablo Chankin y familia son herederos de esta porción de selva  la cual denominaron; Santuario del cocodrilo "Tres Lagunas".  Un lugar donde las lagunas parecieran espejos que reflejan la grandeza de la selva lacandona coloreada en tonos verdes y azules que inspiran un momento de paz en el cual cada uno de tus sentidos no podrá percibir otra cosa que no sea naturaleza.  En este lugar podrás caminar en diversos senderos  y revivir a cada paso las caminatas que hacían los mayas y lacandones cuando salían de caza a buscar la supervivencia de sus familias.   </p>
+                    <h3 align="center"><? echo $user['nombre'];?></h3> <img src="images/<? echo $user['image']; ?>" alt="">
+                    
+                             
+                                      
+                                      <div id="detalles" ><? if ($row = mysql_fetch_array($result)){ 
+  
+
+ 
+
+  
+   do {      
+
+$inicio = "". $row['fechaInicio'].""; // DD/MM/YYYY
+$partI = explode(' ', $inicio);
+$final = "". $row['fechaFinal'].""; // DD/MM/YYYY
+$partF = explode(' ', $final);
+
+      echo ("<p class='marker_p'><a onClick='showDetalles(". $user['idNombre'].", ".$row['idReservacion'].")' ><strong>[". $row['idReservacion']."] </strong>". $partI[0]." <strong> to </strong>". $partF[0]."<strong> ". $row['noPersonas']." Personas</strong> Total: <strong>".$row['total']."</strong></a>  <a onClick='loadbaucher(".$row['idReservacion'].")'> <input type='image' src='images/".$row['estado'].".jpg' ></a></p> "); 
+   } while ($row = mysql_fetch_array($result)); 
+
+} else { 
+echo "No hay reservaciones hasta el momento !"; 
+} ?></div>
+                                       
+                    
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="grey-background wow bounceInUp">
+    <div class="grey-background wow bounceInUp" >
         <div class="container">
             <div class="row">
                 <div class="grid_12">

@@ -82,7 +82,7 @@
                                             ?>
                                             <li><a href="#">Cotización</a></li>
                                             <li><a href="index3.php">Login </a></li>
-                                            <li><a href="index3.php">Registro</a></li>
+                                            <li><a href="index3.php#toregister">Registro</a></li>
 
                                             <?php }
 
@@ -125,113 +125,78 @@
             <div class="row">
                 <div class="grid_12">
                     <form id="bookingForm">
+                        <div class="when">
+                                <div class="booking-form_header">
+                                    <span class="number">01.</span><span class="question">¿Cuando?</span>
+                                </div>
+                                <label class="tmDatepicker">
+                                 <span class="p">Check-in</span>
+                                    <input type="text" name="ArrivalDate"  placeHolder='' data-constraints="@NotEmpty @Required @Date">
+                                </label>
+                                <label class="tmDatepicker">
+                                    <span class="p">Check-out</span>
+                                    <input type="text" name="ArrivalDate"  placeHolder='' data-constraints="@NotEmpty @Required @Date">
+                                </label>
+                        </div>
+
+                       
+                        <div class="where">
+                            <div class="booking-form_header">
+                                <span class="number">02.</span><span class="question">¿Cuantos?</span>
+                            </div>
+                            <div class="input-block">
+                                <div class="tmInput">
+                                    <p>Cantidad de Personas:</p>
+                                    <input placeholder="36(max)" name="Destination" placeHolder="" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial' >
+                                </div>
+                              
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
                         <div class="what">
                             <div class="booking-form_header">
-                                <span class="number">01.</span><span class="question">what?</span>
+                                <span class="number">03.</span><span class="question">¿Qué Cabañas?</span>
                             </div>
                             <div class="tmRadio">
                                 <div class="radio-block">
                                     <div class="radio">
                                         <input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                                        <span>Hotel</span>
+                                        <span>Cabaña Rústica</span>
                                     </div>
                                     <div class="radio">
                                         <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                                        <span>Flight</span>
+                                        <span>Jachak Kium</span>
                                     </div>
                                     <div class="radio">
                                         <input name="Comfort" type="radio" id="tmRadio3" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                                        <span>Flight + Hotel</span>
+                                        <span>Su Kun Kium</span>
                                     </div>
                                 </div>
-                                <div class="radio-block">
-                                    <div class="radio">
-                                        <input name="Comfort" type="radio" id="tmRadio4" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                                        <span>Flight + Hotel + Car</span>
-                                    </div>
-                                    <div class="radio">
-                                        <input name="Comfort" type="radio" id="tmRadio5" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                                        <span>Cruise</span>
-                                    </div>
-                                    <div class="radio">
-                                        <input name="Comfort" type="radio" id="tmRadio6" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                                        <span>Rent a Car</span>
-                                    </div>
+                              
                                 </div>
                             </div>
-                        </div>
+                       
 
-                        <div class="where">
-                            <div class="booking-form_header">
-                                <span class="number">02.</span><span class="question">where?</span>
-                            </div>
-                            <div class="input-block">
-                                <div class="tmInput">
-                                    <p>Destination</p>
-                                    <input name="Destination" placeHolder="" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-                                </div>
-                                <div class="tmInput">
-                                    <p>Your e-mail</p>
-                                    <input name="Email" placeHolder="" type="text" data-constraints="@NotEmpty @Required @Email">
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <div class="when">
-                                <div class="booking-form_header">
-                                    <span class="number">03.</span><span class="question">when?</span>
-                                </div>
-                                <label class="tmDatepicker">
-                                 <span class="p">Check-in date</span>
-                                    <input type="text" name="ArrivalDate"  placeHolder='' data-constraints="@NotEmpty @Required @Date">
-                                </label>
-                                <label class="tmDatepicker">
-                                    <span class="p">Check-out date</span>
-                                    <input type="text" name="ArrivalDate"  placeHolder='' data-constraints="@NotEmpty @Required @Date">
-                                </label>
-                        </div>
-
+                       
+                       
                         <div class="who">
                             <div class="booking-form_header">
-                                <span class="number">04.</span><span class="question">who?</span>
+                                <span class="number">04.</span><span class="question">¿Qué Actividades?</span>
                             </div>
-                            <div class="select-with-name">
-                            <p>Rooms</p>
-                                <select name="Rooms" class="tmSelect manual autocomplete" data-constraints="@Required">
-                                    <option>&nbsp;</option>
-                                    <option>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="select-with-name">
-                                <p>Adults</p>
-                                <select name="Adults" class="tmSelect manual autocomplete" data-class="tmSelect tmSelect2" data-constraints="@Required">
-                                    <option>&nbsp;</option>
-                                    <option>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="select-with-name">
-                                <p>Children</p>
-                                <select name="Children" class="tmSelect manual autocomplete" data-class="tmSelect tmSelect2" data-constraints="@Required">
-                                    <option>&nbsp;</option>
-                                    <option>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
+                            
+      	                    <div class="tmRadio">
+                                <div class="radio-block">
+                                    <div class="radio">
+                                        <input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+                                        <span>Kayak</span>
+                                    </div>
+                                    <div class="radio">
+                                        <input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+                                        <span>Caminata</span>
+                                    </div>
+                                 
+                                    
                         </div>
                         <div class="clearfix"></div>
                         <a class="btn-default" href="#" data-type="submit">ENVIAR</a>
